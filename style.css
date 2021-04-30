@@ -1,0 +1,95 @@
+ :root{
+    
+        --select-back-clr :#99E2D0;
+      
+      } 
+.omf__partie--item{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    width:100%;
+    height:auto;
+    margin:20px 0px 20px 0px;
+    background :#FFF;
+    border-radius: 40px;
+    overflow:hidden;
+    
+
+}
+.omf__item--description{
+    display:flex;
+    flex-flow:column wrap;
+    justify-self:flex-start;
+    overflow-x:hidden;
+    max-width: min-content;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+
+}
+.omf__item--titre{
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 20px 0px 10px 20px;
+    width:100%;
+    overflow-x:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
+
+}
+.omf__item--infos{
+    font-size: 2.4rem;
+    padding: 0px 0px 20px 20px;
+    width:100%;
+    overflow-x:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.omf__item--prival{
+    display:flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    transform: translateX(140px);
+    transition: all 500ms ease-in-out;
+    width:min-content;
+}
+.omf__item--prix{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    align-self: flex-end; 
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: min-content;
+    height: auto;
+    padding: 0px 40px 20px 20px;
+
+}
+.omf__item--validation{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width: 140px;
+    height:auto;
+    background-color: var(--select-back-clr);
+
+  
+}
+.fa-check-circle{
+    font-size:3rem;
+    background-color: var(--select-back-clr);
+    color:white;
+    transform: rotate;
+    transition: all 500ms ease-in-out;
+}
+.omf__partie--item:hover .omf__item--prival{
+    transform: translateX(0px);
+}
+.omf__partie--item:hover .fa-check-circle{
+     transform: rotate(360deg) 
+}
+    
+
+
+
+
+
